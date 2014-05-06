@@ -1,0 +1,62 @@
+<style>
+    .form-box-right{
+        width:350px;
+        float:right;
+        margin-right:200px;
+    }
+    </style>
+
+<div ng-controller='registerController'>
+
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+
+        <div class="container ">
+            <div class="form-box-right">
+            Create Your Savings Account
+
+            <div class="form">   <form class="form-box">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" ng-model="user.username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" ng-model="user.password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Re-enter Password" ng-model="user.password2" class="form-control">
+                </div>
+
+                <button type="submit" ng-click="registerUser(user)" class="btn btn-success">Get Started!</button>
+            </form></div>
+            <br/>
+               </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Example row of columns   -->
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+
+
+    </div> <!-- /container -->
+</div>
